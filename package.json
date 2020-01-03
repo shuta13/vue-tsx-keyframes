@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "library of keyframes as CSS in JS for TSX on Vue",
   "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "watch": "webpack --config webpack.config.js --watch",
@@ -30,12 +31,16 @@
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   },
-  "dependencies": {},
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
   "peerDependencies": {},
   "jest": {
     "moduleFileExtensions": [
       "js",
-      "ts"
+      "ts",
+      "tsx",
+      "json"
     ],
     "moduleNameMapper": {
       "^~/(.+)": "<rootDir>/src/$1"
@@ -49,7 +54,7 @@
       }
     },
     "testMatch": [
-      "**/test/**/*.test.ts"
+      "**/test/**/*.ts"
     ]
   }
 }
