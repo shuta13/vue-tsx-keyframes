@@ -15,41 +15,20 @@ yarn add -D vue-tsx-keyframes # npm install --save-dev vue-tsx-keyframes
 
 In your `.tsx` file, add `@keyframes` enclosed backquote
 ```javascript
-const styles = {
-  msg: {
-    color: "rgb(59, 165, 119)",
-    animation: "horizontal 1.2s ease-in-out infinite alternate"
-  }
-};
-
-export default tsx.component({
-  name: "CssInJs",
-  data() {
-    return {
-      msg: "HelloWorld(CssInJs)",
-      horizontalFrame: `
-        @keyframes horizontal {
-          0% {
-            transform:translateX(-8px);
-          }
-          100% {
-            transform:translateX(8px);
-          }
+data() {
+  return {
+    horizontalFrame: `
+      @keyframes horizontal {
+        0% {
+          transform:translateX(-8px);
         }
-      `
-    };
-  },
-  mounted() {
-    keyframes(this.horizontalFrame);
-  },
-  render(h: CreateElement): VNode {
-    return (
-      <div>
-        <div style={styles.msg}>{this.msg}</div>
-      </div>
-    );
-  }
-});
+        100% {
+          transform:translateX(8px);
+        }
+      }
+    `
+  };
+}
 ```
 
 Import `vue-tsx-keyframes`
@@ -64,4 +43,4 @@ mounted() {
 }
 ```
 
-![https://github.com/shuta13/vue-tsx-keyframes/blob/media/media/lt-demo.gif](https://github.com/shuta13/vue-tsx-keyframes/blob/media/media/lt-demo.gif)
+Sample : <https://github.com/shuta13/vue-tsx-sample/blob/master/src/components/CssInJs.tsx>
