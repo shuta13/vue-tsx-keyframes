@@ -1,4 +1,4 @@
-import Hoge from "../src/index";
+import Hoge from "~/index";
 
 test('hogehoge', () => {
   expect(Hoge()).toBe('hoge');
