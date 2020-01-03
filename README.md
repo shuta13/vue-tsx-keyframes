@@ -13,7 +13,7 @@ Install from npm:
 yarn add -D vue-tsx-keyframes # npm install --save-dev vue-tsx-keyframes
 ```
 
-In your `.tsx`, add keyframes values enclosed backquote
+In your `.tsx` file, add keyframes values enclosed backquote
 ```javascript
 
 ```
