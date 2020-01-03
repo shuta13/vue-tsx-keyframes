@@ -6,14 +6,39 @@
 library of keyframes as CSS in JS with using [vue-tsx-support](https://github.com/wonderful-panda/vue-tsx-support)
 
 ## Usage
-Create vue-cli project, and install vue-tsx-support](https://github.com/wonderful-panda/vue-tsx-support)
+Create vue-cli project, and install [vue-tsx-support](https://github.com/wonderful-panda/vue-tsx-support)
 
 Install from npm:
 ```shell
 yarn add -D vue-tsx-keyframes # npm install --save-dev vue-tsx-keyframes
 ```
 
-In your `.tsx`, add keyframes values enclosed backquote
+In your `.tsx` file, add `@keyframes` enclosed backquote
 ```javascript
+data() {
+  return {
+    horizontalFrame: `
+      @keyframes horizontal {
+        0% {
+          transform:translateX(-8px);
+        }
+        100% {
+          transform:translateX(8px);
+        }
+      }
+    `
+  };
+}
+```
 
+Import `vue-tsx-keyframes`
+```javascript
+import keyframes from "vue-tsx-keyframes";
+```
+
+Add `keyframes` in `mounted()`
+```javascript
+mounted() {
+  keyframes(this.horizontalFrame);
+}
 ```
