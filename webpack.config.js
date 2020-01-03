@@ -10,8 +10,18 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.ts$/, loader: "ts-loader", exclude: /node_modules/ }
-    ]
+      { 
+        test: /\.ts$/,
+        loader: "ts-loader", 
+        exclude: /node_modules/ 
+      },
+      {
+        enforce: 'pre',
+        test: /\.ts$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+      },
+    ],
   },
   output: {
     library: "vue-tsx-keyframes",

@@ -1,5 +1,1 @@
-const Hoge = () => {
-  return "hoge"
-}
-
-export default Hoge;
+export * from "./insertKeyframes";
