@@ -1,4 +1,4 @@
-export const keyframes = (rules: string) => {
+export const keyframes = (rules: string): void => {
   const styleElem = document.createElement("style");
   document.head.appendChild(styleElem);
   let styleSheet = styleElem.sheet as CSSStyleSheet | null; // eslint-disable-line
