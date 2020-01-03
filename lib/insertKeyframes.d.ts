@@ -1,1 +1,1 @@
-export declare const keyframes: (rules: string) => void;
+export declare const keyframes: (rules: string) => string | void;
