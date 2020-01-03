@@ -13,7 +13,32 @@ Install from npm:
 yarn add -D vue-tsx-keyframes # npm install --save-dev vue-tsx-keyframes
 ```
 
-In your `.tsx` file, add keyframes values enclosed backquote
+In your `.tsx` file, add `@keyframes` enclosed backquote
 ```javascript
+data() {
+  return {
+    horizontalFrame: `
+      @keyframes horizontal {
+        0% {
+          transform:translateX(-8px);
+        }
+        100% {
+          transform:translateX(8px);
+        }
+      }
+    `
+  };
+}
+```
 
+Import `vue-tsx-keyframes`
+```javascript
+import keyframes from "vue-tsx-keyframes";
+```
+
+Add `keyframes` in `mounted()`
+```javascript
+mounted() {
+  keyframes(this.horizontalFrame);
+}
 ```
