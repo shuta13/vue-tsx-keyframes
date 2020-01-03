@@ -11,9 +11,18 @@
     "lint": "eslint \"{src,types,test}/**/*.ts\"",
     "fix": "prettier --write \"{src,types,test}/**/*.ts\""
   },
-  "repository": "hoge",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuta13/vue-tsx-keyframes.git"
+  },
+  "keywords": [
+    "Vue",
+    "TypeScript",
+    "TSX"
+  ],
   "author": "did0es(Shuta Hirai) <hollyflatpair@outlook.jp>",
   "license": "MIT",
+  "homepage": "https://github.com/shuta13/vue-tsx-keyframes#readme",
   "devDependencies": {
     "@types/jest": "^24.0.25",
     "@typescript-eslint/eslint-plugin": "^2.14.0",
