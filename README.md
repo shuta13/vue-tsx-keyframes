@@ -42,3 +42,5 @@ mounted() {
   keyframes(this.horizontalFrame);
 }
 ```
+
+![https://github.com/shuta13/vue-tsx-keyframes/blob/media/media/lt-demo.gif](https://github.com/shuta13/vue-tsx-keyframes/blob/media/media/lt-demo.gif)
