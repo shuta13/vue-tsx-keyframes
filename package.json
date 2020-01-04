@@ -63,7 +63,7 @@
       }
     },
     "testMatch": [
-      "**/test/**/*.ts"
+      "**/test/**/*test.ts"
     ]
   }
 }
